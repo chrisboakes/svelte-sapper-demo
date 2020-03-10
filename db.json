@@ -1,0 +1,52 @@
+{
+	"news-articles": [
+		{
+			"title": "Coronavirus Q&A: how will businesses and the economy cope as Covid-19 takes hold? Our expert answers your questions",
+			"slug": "coronavirus-q&a-how-will-businesses-cope",
+			"section": "news"
+		},
+		{
+			"title": "Markets regain ground after Monday rout – live updates",
+			"slug": "markets-regain-ground-after-monday",
+			"section": "news"
+		},
+		{
+			"title": "5 horrific mistakes the world made during the financial crisis that we mustn\'t repeat with coronavirus",
+			"slug": "5-horrific-mistakes-the-world-made",
+			"section": "news"
+		},
+		{
+			"title": "How coronavirus is rising in different countries: UK among countries to see fastest increase",
+			"slug": "how-coronavirus-is-rising",
+			"section": "news"
+		}
+	],
+	"coronavirus-q&a-how-will-businesses-cope": {
+		"title": "Coronavirus Q&A: how will businesses and the economy cope as Covid-19 takes hold? Our expert answers your questions",
+		"slug": "coronavirus-q&a-how-will-businesses-cope",
+		"section": "news",
+		"standfirst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl nisi, blandit a pellentesque ac, varius non enim.",
+		"content": "<p>Aliquam consectetur eu augue vel fermentum. Nullam non hendrerit dolor. Sed eu est turpis.</p><p>Pellentesque eu metus euismod, <strong>ornare</strong> eros at, tristique augue. Phasellus convallis sapien non orci tempor, nec pharetra diam scelerisque. Quisque ac mi ut dui mattis pretium vel at nibh. Sed ac ipsum a odio sodales gravida. Proin et ante maximus, dapibus enim fermentum, lobortis sapien. In hendrerit urna sit amet purus placerat, aliquam interdum tortor eleifend. Phasellus aliquam, nulla id tempus laoreet, lacus sapien ullamcorper massa, lobortis elementum sapien turpis suscipit ligula. Vivamus accumsan sit amet ante nec aliquam. Nulla fringilla est mauris, ac lobortis dui auctor ac. Vivamus sit amet malesuada lectus. Nunc gravida congue quam, ac volutpat justo semper a. Duis hendrerit turpis in vestibulum sollicitudin. Quisque nulla diam, feugiat ac nisl vitae, molestie lobortis sem.<p>"
+	},
+	"markets-regain-ground-after-monday": {
+		"title": "Markets regain ground after Monday rout – live updates",
+		"slug": "markets-regain-ground-after-monday",
+		"section": "news",
+		"standfirst": "Duis scelerisque auctor lacinia. Donec non elementum mi. Aliquam erat volutpat. Nulla placerat nunc in risus mollis, eget malesuada",
+		"content": "<p>Vestibulum porttitor sapien ut orci molestie imperdiet porta semper tellus. Donec nec velit id odio tempus malesuada. Duis ac felis et dolor pretium placerat. Duis pellentesque, nisi ac sagittis tempus, quam leo feugiat lectus, <a href='#'>eleifend consectetur felis</a> sapien eget lorem.</p><p>Donec blandit in massa quis efficitur. Quisque non consequat ex. Etiam euismod lectus tincidunt interdum euismod. Suspendisse nec quam felis. Fusce mattis quam quis orci convallis dignissim. Pellentesque auctor, metus eget sollicitudin facilisis, enim nulla rutrum metus, eu commodo tortor mauris sit amet ipsum. Morbi tempus facilisis aliquet.</p>"
+	},
+	"5-horrific-mistakes-the-world-made": {
+		"title": "5 horrific mistakes the world made during the financial crisis that we mustn\'t repeat with coronavirus",
+		"slug": "5-horrific-mistakes-the-world-made",
+		"section": "news",
+		"standfirst": "In egestas ut ligula sit amet pellentesque. Nunc tristique, lacus et rutrum gravida, purus turpis tempus dui, ut luctus urna urna ac magna.",
+		"content": "<p>Aliquam consectetur eu augue vel fermentum. Nullam non hendrerit dolor. Sed eu est turpis.</p><p>Pellentesque eu metus euismod, <strong>ornare</strong> eros at, tristique augue. Phasellus convallis sapien non orci tempor, nec pharetra diam scelerisque. Quisque ac mi ut dui mattis pretium vel at nibh. Sed ac ipsum a odio sodales gravida. Proin et ante maximus, dapibus enim fermentum, lobortis sapien. In hendrerit urna sit amet purus placerat, aliquam interdum tortor eleifend. Phasellus aliquam, nulla id tempus laoreet, lacus sapien ullamcorper massa, lobortis elementum sapien turpis suscipit ligula. Vivamus accumsan sit amet ante nec aliquam. Nulla fringilla est mauris, ac lobortis dui auctor ac. Vivamus sit amet malesuada lectus. Nunc gravida congue quam, ac volutpat justo semper a. Duis hendrerit turpis in vestibulum sollicitudin. Quisque nulla diam, feugiat ac nisl vitae, molestie lobortis sem.<p>"
+	},
+	"how-coronavirus-is-rising": {
+		"title": "How coronavirus is rising in different countries: UK among countries to see fastest increase",
+		"slug": "how-coronavirus-is-rising",
+		"section": "news",
+		"standfirst": "Nullam ornare ante dui, ac interdum leo facilisis sed. Curabitur vel rhoncus lorem. Quisque vel mauris ac ex lobortis venenatis.",
+		"content": "<p>Vestibulum porttitor sapien ut orci molestie imperdiet porta semper tellus. Donec nec velit id odio tempus malesuada. Duis ac felis et dolor pretium placerat. Duis pellentesque, nisi ac sagittis tempus, quam leo feugiat lectus, <a href='#'>eleifend consectetur felis</a> sapien eget lorem.</p><p>Donec blandit in massa quis efficitur. Quisque non consequat ex. Etiam euismod lectus tincidunt interdum euismod. Suspendisse nec quam felis. Fusce mattis quam quis orci convallis dignissim. Pellentesque auctor, metus eget sollicitudin facilisis, enim nulla rutrum metus, eu commodo tortor mauris sit amet ipsum. Morbi tempus facilisis aliquet.</p>"
+	}
+}
