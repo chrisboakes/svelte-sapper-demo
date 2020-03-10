@@ -1,8 +1,11 @@
 <script context="module">
-	export function preload({ params, query }) {
-		return this.fetch(`news.json`).then(r => r.json()).then(posts => {
-			return { posts };
-		});
+	export async function preload({ params, query }) {
+		const res = await this.fetch('https://my-json-server.typicode.com/chrisboakes/svelte-sapper-demo/news-articles')
+		const data = await res.json();
+
+		return {
+			posts: data
+		}
 	}
 </script>
 
@@ -22,6 +25,6 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-		<li><a rel='prefetch' href='news/{post.slug}'>{post.title}</a></li>
+		<li><a rel='prefetch' href='{post.section}/{post.slug}'>{post.title}</a></li>
 	{/each}
 </ul>
