@@ -7,7 +7,10 @@
 
 <style>
 	header {
-		
+		border-bottom: 1px solid grey;
+		display: grid;
+		grid-template-columns: repeat(12,1fr);
+		padding: 20px;
 	}
 </style>
 
