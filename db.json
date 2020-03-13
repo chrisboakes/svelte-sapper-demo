@@ -21,6 +21,32 @@
 			"section": "news"
 		}
 	],
+	"politics-articles": [
+		{
+			"title": "Rishi Sunak 'has postponed tax rises' with painful autumn budget expected",
+			"slug": "rishi-sunak-has-postponed-tax-rises",
+			"section": "politics"
+		},
+		{
+			"title": "Carrie Symonds: The 'first girlfriend' whose quiet support helped smarten up the PM for power",
+			"slug": "carrie-symonds-the-first-girlfriend",
+			"section": "politics"
+		},
+	],
+	"rishi-sunak-has-postponed-tax-rises": {
+		"title": "Rishi Sunak 'has postponed tax rises' with painful autumn budget expected",
+		"slug": "rishi-sunak-has-postponed-tax-rises",
+		"section": "politics",
+		"standfirst": "Plans to raise taxes were shelved in light of the coronavirus crisis, but the Chancellor will face some difficult decisions in the autumn",
+		"content": "<p>Aliquam consectetur eu augue vel fermentum. Nullam non hendrerit dolor. Sed eu est turpis.</p><p>Pellentesque eu metus euismod, <strong>ornare</strong> eros at, tristique augue. Phasellus convallis sapien non orci tempor, nec pharetra diam scelerisque. Quisque ac mi ut dui mattis pretium vel at nibh. Sed ac ipsum a odio sodales gravida. Proin et ante maximus, dapibus enim fermentum, lobortis sapien. In hendrerit urna sit amet purus placerat, aliquam interdum tortor eleifend. Phasellus aliquam, nulla id tempus laoreet, lacus sapien ullamcorper massa, lobortis elementum sapien turpis suscipit ligula. Vivamus accumsan sit amet ante nec aliquam. Nulla fringilla est mauris, ac lobortis dui auctor ac. Vivamus sit amet malesuada lectus. Nunc gravida congue quam, ac volutpat justo semper a. Duis hendrerit turpis in vestibulum sollicitudin. Quisque nulla diam, feugiat ac nisl vitae, molestie lobortis sem.<p>"
+	},
+	"carrie-symonds-the-first-girlfriend": {
+		"title": "Carrie Symonds: The 'first girlfriend' whose quiet support helped smarten up the PM for power",
+		"slug": "carrie-symonds-the-first-girlfriend",
+		"section": "politics",
+		"standfirst": "A baby on the way to No 10, and a marriage to boot",
+		"content": "<p>Vestibulum porttitor sapien ut orci molestie imperdiet porta semper tellus. Donec nec velit id odio tempus malesuada. Duis ac felis et dolor pretium placerat. Duis pellentesque, nisi ac sagittis tempus, quam leo feugiat lectus, <a href='#'>eleifend consectetur felis</a> sapien eget lorem.</p><p>Donec blandit in massa quis efficitur. Quisque non consequat ex. Etiam euismod lectus tincidunt interdum euismod. Suspendisse nec quam felis. Fusce mattis quam quis orci convallis dignissim. Pellentesque auctor, metus eget sollicitudin facilisis, enim nulla rutrum metus, eu commodo tortor mauris sit amet ipsum. Morbi tempus facilisis aliquet.</p>"
+	},
 	"coronavirus-q&a-how-will-businesses-cope": {
 		"title": "Coronavirus Q&A: how will businesses and the economy cope as Covid-19 takes hold? Our expert answers your questions",
 		"slug": "coronavirus-q&a-how-will-businesses-cope",
