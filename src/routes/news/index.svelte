@@ -21,6 +21,8 @@
 
 <h1>News</h1>
 
+<h2>This is a static page with a call for content client-side</h2>
+
 <ul>
 	{#if posts}
 		{#each posts as post}

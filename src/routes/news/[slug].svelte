@@ -22,6 +22,9 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
+
+<h2>This page is server-side rendered</h2>
+
 <p>{post.standfirst}</p>
 
 <div class='content'>
