@@ -1,18 +1,21 @@
 <script>
 	let posts = [];
 
-	async function getLists() {
-		const res = await fetch('https://my-json-server.typicode.com/chrisboakes/svelte-sapper-demo/news-articles')
-		const data = await res.json();
+	// Process client-side
+	if (process.browser) {
+		async function getLists() {
+			const res = await fetch('https://my-json-server.typicode.com/chrisboakes/svelte-sapper-demo/news-articles')
+			const data = await res.json();
 
-		return {
-			posts: data
+			return {
+				posts: data
+			}
 		}
+		
+		getLists().then((results) => {
+			posts = results.posts;
+		});
 	}
-	
-	getLists().then((results) => {
-		posts = results.posts;
-	});
 </script>
 
 <svelte:head>
