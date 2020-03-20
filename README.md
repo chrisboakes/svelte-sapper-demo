@@ -1,29 +1,79 @@
-# sapper-template
+# Sapper/Svelte
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+## Objectives
 
+Unlike Nuxt and Preact, Svelte is not a framework - it's a compiler step so it runs at build time. This is helpful as the code is compiled to native technologies, meaning there is no overhead for the user in terms of shipping a framework.
 
-## Getting started
+By default Svelte doesn't support routing and static rendering. Sapper is powered by Svelte and handles a lot of PWA characteristics such as offline support and service workers out of the box. It also takes care of static routing and also supports server-side rendering.
 
+## POC
 
-### Using `degit`
+Project repo: [https://github.com/chrisboakes/svelte-sapper-demo](https://github.com/chrisboakes/svelte-sapper-demo)
 
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `sapper-template`:
+Built project: [https://svelte-sapper-demo.herokuapp.com/](https://svelte-sapper-demo.herokuapp.com/)
 
-```bash
-# for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
-# for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
-```
+I used the default [sapper-template](https://github.com/sveltejs/sapper-template) to rapidly prototype this POC and used some dummy data to imitate the content API (e.g. [news articles](https://my-json-server.typicode.com/chrisboakes/svelte-sapper-demo/news-articles)).
 
+This POC is a mixture of statically generated, server-side rendered and client side rendered data:
 
-### Using GitHub templates
+- [Static rendering](#Static-Rendering): the home page and the 
+- [Server-side rendering](#Server-Side-Rendering): the politics page and the single articles for both News and Politics
+- [Client-side rendering](#Client-Side-Rendering): the data on the news page
 
-Alternatively, you can use GitHub's template feature with the [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) repositories.
+## Outcome
 
+### Pros
 
-### Running the project
+- Static build was fast (260ms)
+- Intuitive architecture not disimilar to frameworks such as React and Vue
+- No overhead of a loading a framework for the end user - the code is compiled
+- Has offline support and a configured service worker out of the box
+- Integrates well with frequent, real time updates
+
+### Cons
+
+- Cannot seem to run a separate build job to statically render *just* new articles when they are modified or created (instead of the entire application every time there is a new article)
+- New technology so while there is some support online, it's not as widely supported as React
+- Unsure about data binding when content is updated via service worker
+
+## Further research
+
+- Gain a greater understanding of how the out of the box features work:
+	- Server workers and how the data binding works when content is updated
+	- DOM hydration
+	- Pre-fetching
+- Sharing of `[slug].svelte` template
+- Load test build time based on quantity of articles
+
+## Resources
+
+- [Sapper Introduction](https://svelte.dev/blog/sapper-towards-the-ideal-web-app-framework)
+- [Svelte Docs](https://svelte.dev/)
+- [Sapper Docs](https://sapper.svelte.dev/)
+
+## Rendering Types
+
+[This article](https://developers.google.com/web/updates/2019/02/rendering-on-the-web) gives an overview of the different rendering types.
+
+### Server-Side Rendering
+
+The request is made to the server which makes a call to the Content API, once it has a response it returns the data to the server and the server returns the HTML to the browser.
+
+![SSR](./readme/ssr.jpg)
+
+### Client-Side Rendering
+
+The intial request for HTML is made to the CDN which returns HTML without any content. After the HTML has been rendered by the browser a call is made via JavaScript to fetch the content from the content API which is then appended into the markup.
+
+![CSR](./readme/csr.jpg)
+
+### Static Rendering
+
+Before the application is deployed, when the project is being compiled, all of the requests to the content API are made and compiled to HTML files which can served back quickly from a CDN.
+
+![Static](./readme/static.jpg)
+
+# Running the project
 
 However you get the code, you can install dependencies and run the project in development mode with:
 
