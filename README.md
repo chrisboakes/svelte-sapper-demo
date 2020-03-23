@@ -16,8 +16,8 @@ I used the default [sapper-template](https://github.com/sveltejs/sapper-template
 
 This POC is a mixture of statically generated, server-side rendered and client side rendered data:
 
-- [Static rendering](#Static-Rendering): the home page and the 
-- [Server-side rendering](#Server-Side-Rendering): the politics page and the single articles for both News and Politics
+- [Static rendering](#Static-Rendering): the home page and the politics articles
+- [Server-side rendering](#Server-Side-Rendering): the politics page and the single news articles
 - [Client-side rendering](#Client-Side-Rendering): the data on the news page
 
 ## Outcome
