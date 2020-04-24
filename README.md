@@ -1,6 +1,6 @@
 # Sapper/Svelte
 
-## Objectives
+## Introduction
 
 Unlike Nuxt and Preact, Svelte is not a framework - it's a compiler step so it runs at build time. This is helpful as the code is compiled to native technologies, meaning there is no overhead for the user in terms of shipping a framework.
 
@@ -14,7 +14,7 @@ Built project: [https://svelte-sapper-demo.herokuapp.com/](https://svelte-sapper
 
 I used the default [sapper-template](https://github.com/sveltejs/sapper-template) to rapidly prototype this POC and used some dummy data to imitate the content API (e.g. [news articles](https://my-json-server.typicode.com/chrisboakes/svelte-sapper-demo/news-articles)).
 
-This POC is a mixture of statically generated, server-side rendered and client side rendered data:
+This POC is a mixture of statically generated, server-side rendered and client-side rendered data:
 
 - [Static rendering](#Static-Rendering): the home page and the politics articles
 - [Server-side rendering](#Server-Side-Rendering): the politics page and the single news articles
@@ -32,6 +32,7 @@ This POC is a mixture of statically generated, server-side rendered and client s
 
 ### Cons
 
+- While the bundler is configurable, Sapper doesn't seem to be very configurable itself
 - Cannot seem to run a separate build job to statically render *just* new articles when they are modified or created (instead of the entire application every time there is a new article)
 - New technology so while there is some support online, it's not as widely supported as React
 - Unsure about data binding when content is updated via service worker
